@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import _ from "lodash";
 import { IUser, UserParams, UsersApi } from "src/services/users";
 import { UserState } from "./types";
 
@@ -45,7 +44,7 @@ const userSlice = createSlice({
     b.addCase(getUsers.fulfilled, (state, action) => {
       state.loading = false;
 
-      state.entities = action.payload.data;
+      state.entities = action.payload?.data;
       const findUser = action.payload?.data?.find(
         (user) => user.email === "emma.wong@reqres.in"
       );

@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import _ from "lodash";
 import { ProductParams, ProductsApi } from "src/services/products";
 import { ProductState } from "./types";
 
