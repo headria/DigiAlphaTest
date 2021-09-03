@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "src/styles/colors";
 export const HeaderStyle = styled.div`
   position: relative;
   overflow: hidden;
